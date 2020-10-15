@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="handleGetPay">立即支付</button>
+    <pswd-pop :showPswdPop.sync="pswdPopVisible"></pswd-pop>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import pswdPop from "./components/PswdPop";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    pswdPop
+  },
+  data() {
+    return {
+      pswdPopVisible: false
+    };
+  },
+  methods: {
+    handleGetPay() {
+      this.pswdPopVisible = true;
+    }
   }
 };
 </script>

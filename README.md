@@ -1,4 +1,4 @@
-# payPassword
+# pswdpay
 
 ## Project setup
 ```
