@@ -21,7 +21,7 @@
           />
         </div>
         <div class="forget-pswd">
-          <a @click="forgetSecondaryPswd()">忘记密码?</a>
+          <a @click="handleForgetPswd()">忘记密码?</a>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ export default {
       // });
     },
     // 忘记二级密码
-    forgetSecondaryPswd() {
+    handleForgetPswd() {
       // window.wishtree.gotoSettingSecurityPwdPage();
       // 跳转到设置密码页面
     }
