@@ -148,9 +148,11 @@ export default {
         font-weight: bold;
       }
       i {
-        float: right;
-        font-size: 18px;
+        position: absolute;
+        right: 12px;
+        font-size: 22px;
         color: #666;
+        top: 10px;
       }
     }
     .common-pswd-text {
