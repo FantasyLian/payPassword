@@ -48,7 +48,7 @@ export default {
         { value: "" },
         { value: "" }
       ],
-      secordaryPswd: 0
+      payPassword: 0
     };
   },
   methods: {
@@ -68,7 +68,7 @@ export default {
       });
       if (nums === 6) {
         this.pswdValid = true;
-        this.secordaryPswd = this.handleArray2Number(this.pswdNums).join("");
+        this.payPassword = this.handleArray2Number(this.pswdNums).join("");
         this.handleCheckSecondaryPswd();
       } else {
         this.pswdValid = false;
@@ -94,7 +94,7 @@ export default {
     handleCheckSecondaryPswd() {
       this.handleHidePswdPop();
       // return new Promise((resolve, reject) => {
-      //   checkSecondaryPassword({ pwd2: this.secordaryPswd })
+      //   checkSecondaryPassword({ pwd2: this.payPassword })
       //     .then(res => {
       //       res = res.data;
       //       if (res.code === 200) {
@@ -112,7 +112,6 @@ export default {
     },
     // 忘记二级密码
     handleForgetPswd() {
-      // window.wishtree.gotoSettingSecurityPwdPage();
       // 跳转到设置密码页面
     }
   }
